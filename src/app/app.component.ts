@@ -19,6 +19,7 @@ export class AppComponent {
 
   updateTodoName(value: any) {
     const todoItem = this.listOfTodos.find((item) => item.id === value.id);
+    console.log('update name', todoItem);
     if (todoItem) todoItem.name = value.name;
   }
 

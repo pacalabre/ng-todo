@@ -1,2 +1,7 @@
 <add-todo-form (todoEvent)="addTodo($event)"></add-todo-form>
-<list-todos [listOfTodos]="listOfTodos"></list-todos>
+<list-todos
+  [listOfTodos]="listOfTodos"
+  todoIsCompleteUpdated="updateIsComplete($event)"
+  (todoNameUpdated)="updateTodoName($event)"
+  (removeItemEvent)="removeItem($event)"
+></list-todos>

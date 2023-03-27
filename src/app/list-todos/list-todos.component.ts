@@ -1,6 +1,4 @@
-import { Component } from '@angular/core';
-import { Input, Output, EventEmitter } from '@angular/core';
-
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 @Component({
   selector: 'list-todos',
   templateUrl: './list-todos.component.html',

@@ -4,7 +4,7 @@
     <todo
       (deleteTodo)="removeItem(index)"
       (isCompleteChanged)="updateIsComplete($event, item.id)"
-      (editdName)="updateName($event, item.id)"
+      (editedName)="updateName($event, item.id)"
       [name]="item.name"
       [isComplete]="item.isComplete"
     ></todo>
