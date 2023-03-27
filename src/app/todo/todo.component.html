@@ -1,1 +1,11 @@
-<p>todo works!</p>
+<p>{{ name }}</p>
+<input
+  type="text"
+  (change)="editName($event)"
+  value="{{ name }}"
+  *ngIf="isEditing"
+/>
+<p>Complete: {{ isComplete }}</p>
+<input (click)="toggleIsComplete()" type="checkbox" [checked]="isComplete" />
+<button (click)="toggleEdit()">Edit</button>
+<button (click)="(removeItem)">Delete</button>
